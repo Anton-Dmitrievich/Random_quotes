@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  max-width: 1250px;
+  background-color: aquamarine;
+  margin: auto;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 18px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  padding: 0 35px 0 35px;
+}
+
+.contend {
+  text-align: center;
+}
+
+.windows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid rgba(133, 74, 74, 0.404);
+  box-shadow: 0.4em 0.4em 5px rgba(77, 21, 21, 0.5);
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  padding: 0 35px 0 35px;
+  background: white;
+  margin-bottom: 22px;
+  overflow: auto;
+  -ms-scroll-limit: horizontal;
+}
+
+.quotes_txt {
+  font-size: 24px;
+}
+.quotes_autor {
+  font-size: 18px;
+}
+
+.button__txt {
+  border-radius: 25px;
+  padding: 20px 80px 20px 80px;
+  background: rgb(24, 231, 162);
+  box-shadow: 0.4em 0.4em 5px rgba(77, 21, 21, 0.5);
+}
+.button__txt:active {
+  border-radius: 25px;
+  padding: 20px 80px 20px 80px;
+  box-shadow: none;
+}
