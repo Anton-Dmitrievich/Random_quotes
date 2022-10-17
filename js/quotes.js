@@ -8,9 +8,9 @@ function generator() {
 		"Лао-Цзы": "Никогда не осуждайте человека, пока не пройдете долгий путь в его ботинках",
 		"А. Шопенгауэр": "Картина которую ты видишь в своем разуме, со временем станет твоей жизнью",
 	}
-	let authors = Object.keys(gen)//Саздаем  масив из  объекта 
+	let authors = Object.keys(gen)//Саздаем  масив из свойств объекта 
 	let author = authors[Math.floor(Math.random() * authors.length)];//Выбираем слуйчаным оброзом из масива элименты (СВОЙСТВА ОБЪЕКТА)
-	let qute = gen[author];//Получаем нужную нам запрос из объект
+	let qute = gen[author];//Оброшаемся к  объекту подставля его ключи (свойства) и присваеваем в переменную
 
 	document.getElementById("quotes_id").innerHTML = qute; //отправлем на страницу 
 	document.getElementById("autor_id").innerHTML = author;//отправлем на страницу 
