@@ -74,20 +74,21 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   max-width: 1250px;
-  background-color: aquamarine;
+  background: aquamarine;
   margin: auto;
   font-family: "Fuzzy Bubbles", cursive;
-  font-size: 22px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 5%;
 }
 
 .contend {
   text-align: center;
 }
 
-.windows {
+.win {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +100,6 @@ body {
   background: white;
   margin-bottom: 22px;
   overflow: auto;
-  -ms-scroll-limit: horizontal;
 }
 
 .button__txt {

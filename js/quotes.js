@@ -15,3 +15,20 @@ function generator() {
 	document.getElementById("quotes_id").innerHTML = qute; //отправлем на страницу 
 	document.getElementById("autor_id").innerHTML = author;//отправлем на страницу 
 }
+function background() {
+	let win = (document.querySelector('.win')); // Оброшаемся к селектору  в css фйле принимает элимент.
+	let style = getComputedStyle(win);//Элимент css, становится объектом
+	let def = (style.backgroundColor);//Оброшаемся к свойству обекта и получаем нужную нам строку из css.
+	if (def == 'rgb(255, 255, 255)') {
+		document.getElementsByClassName('win')[0].style.background = 'black';
+		document.getElementsByClassName('win')[0].style.color = 'white';
+		document.getElementsByClassName('win')[0].style.border = '10px solid white';
+	} else {
+		document.getElementsByClassName('win')[0].style.background = 'white';
+		document.getElementsByClassName('win')[0].style.color = 'black';
+		document.getElementsByClassName('win')[0].style.border = '10px solid rgba(77, 21, 21, 0.5)';
+	}
+}
+
+
+
