@@ -18,8 +18,8 @@ function generator() {
 function background() {
 	let win = (document.querySelector('.win')); // Оброшаемся к селектору  в css фйле принимает элимент.
 	let style = getComputedStyle(win);//Элимент css, становится объектом
-	let def = (style.backgroundColor);//Оброшаемся к свойству обекта и получаем нужную нам строку из css.
-	if (def == 'rgb(255, 255, 255)') {
+	let color = (style.backgroundColor);//Оброшаемся к свойству обекта и получаем нужную нам строку из css.
+	if (color == 'rgb(255, 255, 255)') {
 		document.getElementsByClassName('win')[0].style.background = 'black';
 		document.getElementsByClassName('win')[0].style.color = 'white';
 		document.getElementsByClassName('win')[0].style.border = '10px solid white';
